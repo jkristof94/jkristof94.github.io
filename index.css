@@ -1,0 +1,48 @@
+.menu {
+    border-width: 1px;
+    border-color: #fff;
+    display: inline-block;
+    border-radius: .25rem;
+    padding: .25rem .75rem;
+}
+
+.menu:hover {
+    border-color: #edf2f7;
+    background-color: #edf2f7;
+}
+
+.menu.selected {
+    color: #fff;
+    border-color: #4299e1;
+    background-color: #4299e1;
+}
+
+.menu.selected:hover {
+    color: #fff;
+    border-color: #4299e1;
+    background-color: #4299e1;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 15px 30px;
+}
+
+.skill span {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.skill img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
