@@ -31,11 +31,12 @@
 
 <body>
     <div class="container mx-auto flex flex-wrap rounded overflow-hidden my-10">
-        <div class="w-full md:w-1/4 px-5 md:pr-0 md:pl-5">
+        <div id="profile" class="w-full md:w-1/4 px-5 md:pr-0 md:pl-5">
             <img class="w-48 rounded-full border-solid border-4 border-white shadow-lg" src="profile.jpg" alt="Profile picture" style="margin: auto">
+            <p id="name" class="text-center pt-2 text-xl">Juhász Kristóf</p>
         </div>
         <div class="w-full md:w-3/4 px-5">
-            <ul class="flex my-5">
+            <ul id="navigation" class="flex my-5">
                 <li class="mr-3">
                     <a id="menu-experience" class="menu selected" href="#" onClick="select('experience')">Experience</a>
                 </li>
@@ -49,27 +50,40 @@
             <div id="section-experience" class="cv-section">
                 <div class="my-10">
                     <div class="font-bold text-xl mb-1">EPAM Systems Zrt. (January 2018 - present)</div>
-                    <p class="font-semibold text-gray-600 mb-2">Full Stack Engineer</p>
-                    <p class="text-gray-700 text-base">
-                        Involved in the development of Landing Pages in Java, then moved on to maintaining and improving a CMS system in Groovy and AngularJS. Currently working on rewriting that system in Kotlin + React. Experience with CI/CD, Jenkins, AWS and other DevOps related technologies.
+                    <p class="font-semibold text-gray-800 mb-2">Full Stack Engineer</p>
+                    <p class="pb-1">
+                        Involved in the development of web applications in a microservice architecture
                     </p>
+                    <ul class="list-disc pl-10">
+                        <li>Developed both front-end and back-end code</li>
+                        <li>Maintained, improved, and later ported to a new technology stack an in-house CMS system</li>
+                        <li>Experience with databases, containerization, CI/CD, AWS CLI and other DevOps related tools</li>
+                    </ul>
                 </div>
                 <div class="my-10">
-                    <div class="font-bold text-xl mb-1">IKRON Fejlesztő és Szolgáltató Kft. (June 2017 - present)</div>
-                    <p class="font-semibold text-gray-600 mb-2">Software Developer</p>
-                    <p class="text-gray-700 text-base">
-                        Involved in the development of the PEAS Enterprise Management System designed for small and medium sized businesses.
+                    <div class="font-bold text-xl mb-1">IKRON Fejlesztő és Szolgáltató Kft. (June 2017 - January 2018)</div>
+                    <p class="font-semibold text-gray-800 mb-2">Software Developer</p>
+                    <p class="pb-1">
+                        Involved in the development of the PEAS Enterprise Management System
+                        <ul class="list-disc pl-10">
+                            <li>Developed both front-end (ZK Framework) and back-end (Java) code</li>
+                            <li>Experience with delivering hotfixes, backports and data recovery</li>
+                            <li>Responsible for planning, developing and maintaining new modules based on user requests</li>
+                        </ul>
                     </p>
                 </div>
             </div>
             <div id="section-education" class="cv-section" style="display: none">
                 <div class="my-10">
                     <div class="font-bold text-xl mb-1">University of Szeged (2013 - 2018)</div>
-                    <p class="font-semibold text-gray-600 mb-2">Engineering Information Technology (BSc)</p>
+                    <p class="font-semibold text-gray-800 mb-2">Engineering Information Technology (BSc)</p>
                 </div>
-                <div class="my-10">
+                <div id="secondary-school" class="my-10">
                     <div class="font-bold text-xl mb-1">Bolyai Secondary Grammar School and Dormitory for Gifted Students (2009 - 2013)</div>
-                    <p class="font-semibold text-gray-600 mb-2">Mathematics and Natural Sciences</p>
+                    <p class="font-semibold text-gray-800 mb-2">Mathematics and Natural Sciences</p>
+                </div>
+                <div class="my-5">
+                    <div class="font-bold text-xl mb-1">English level - C1</div>
                 </div>
             </div>
             <div id="section-skills" class="cv-section" style="display: none">
@@ -143,9 +157,6 @@
                             <span>Splunk</span>
                         </div>
                     </div>
-                </div>
-                <div class="my-5">
-                    <div class="font-bold text-xl mb-1">Other</div>
                 </div>
             </div>
         </div>
