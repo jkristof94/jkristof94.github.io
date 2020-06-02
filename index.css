@@ -94,7 +94,8 @@ span.footer {
     }
 
     span.footer {
-        position: fixed;
         bottom: 0;
+        display: block;
+        position: fixed;
     }
 }
