@@ -92,9 +92,8 @@ span.footer {
         display: none !important;
     }
     
-    #section-skills > div {
-        float: left;
-        width: 33.33%;
+    #section-skills {
+        display: none !important;
     }
 
     span.footer {
