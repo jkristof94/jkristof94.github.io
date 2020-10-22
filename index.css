@@ -89,7 +89,7 @@ span.footer {
     }
 
     #section-education {
-        display: none;
+        display: none !important;
     }
     
     #section-skills > div {
