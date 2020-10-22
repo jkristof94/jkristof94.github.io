@@ -88,6 +88,10 @@ span.footer {
         display: none;
     }
 
+    #section-education {
+        display: none;
+    }
+    
     #section-skills > div {
         float: left;
         width: 33.33%;
